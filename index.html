@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+        <div class="head">
+            <h1>KONVERSI SUHU</h1>
+            <p>Input suhu yang ingin kalian konversi</p>
+        </div>
+        <div class="input">
+            <!--Option suhu yang ingin di konversi-->
+            <div class="form">
+            <input type="text" id="input" placeholder="Masukan angka">
+            <select id="select" onchange="submit()">
+                <option>Jenis Suhu</option>
+                <option value="Kelvin">Kelvin</option>
+                <option value="Celcius">Celcius</option>
+                <option value="Farenheit">Farenheit</option>
+                <option value="Reamur">Reamur</option>
+            </select>
+            </div>
+     
+        </div>
+    </div>
+        <div class="table">
+            <!--Table hasil convers suhu-->
+            <table>
+                <tr>
+                    <th>Satuan Rumus</th>
+                    <th>Derajat</th>
+                </tr>
+                <tr class="column1"> 
+                    <td id="satuan1"></td>
+                    <td id="Derajat1"></td>
+                </tr>
+                <tr class="column2">
+                    <td id="satuan2"></td>
+                    <td id="Derajat2"></td>
+                </tr>
+                <tr class="column3">
+                    <td id="satuan3"></td>
+                    <td id="Derajat3"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
